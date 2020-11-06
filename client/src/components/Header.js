@@ -1,7 +1,6 @@
 import React from "react";
 
 // Material-UI Icons
-import SearchIcon from "@material-ui/icons/Search";
 import HomeIcon from "@material-ui/icons/Home";
 import FlashOnIcon from "@material-ui/icons/FlashOn";
 import LiveTvIcon from "@material-ui/icons/LiveTv";
@@ -40,10 +39,7 @@ function Header() {
         </div>
       </div>
 
-      <img
-        src="https://www.suplari.com/wp-content/uploads/2019/09/hulu-logo-white.png"
-        alt="logo"
-      />
+      <h3>bulu</h3>
     </div>
   );
 }
