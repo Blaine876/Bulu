@@ -1,9 +1,9 @@
 .videoCard {
   color: white;
-  width: 50rem;
-  height: 40rem;
-  padding: 2rem;
-  transition: transform 100ms;
+  width: 35rem;
+  /* height: 40rem; */
+  padding: 4rem;
+  transition: transform 0.3s;
 }
 
 .videoCard:hover {
@@ -11,8 +11,11 @@
 }
 
 .videoCard > img {
-  width: 50rem;
-  height: 30rem;
+  width: 100%;
+  border-radius: 5px;
+  /* border: 1px solid black; */
+
+  /* height: 30rem; */
   object-fit: contain;
 }
 
@@ -26,4 +29,28 @@
 
 .videoCard > h2 {
   padding-top: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.videoCard > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 859px) {
+  .videoCard {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .videoCard {
+    padding: 2rem;
+  }
+
+  /* .videoCard > img {
+    width: 99%;
+    margin-right: auto;
+    margin-left: auto;
+  } */
 }

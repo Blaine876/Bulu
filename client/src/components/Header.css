@@ -1,11 +1,16 @@
 .header {
   color: rgb(255, 255, 255);
   display: flex;
-
   padding: 2rem;
   align-items: center;
   justify-content: space-between;
 }
+/* 
+@media screen and (max-width:630px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+  } */
 
 .header::-webkit-scrollbar {
   display: none;
@@ -18,8 +23,10 @@
 
 .header__icons {
   display: flex;
+  color: #3dbb3d;
   align-items: center;
   text-align: center;
+  /* width: 100%; */
 }
 
 .header__icon {
@@ -30,10 +37,40 @@
   cursor: pointer;
 }
 
+/* @media screen and (max-width: 490px) {
+  .header__icon {
+    margin-right: 2rem;
+    width: 100%;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .header__icons {
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+
+    margin-right: 0;
+  }
+
+  .header > h3 {
+    font-family: "Poppins", sans-serif;
+    display: none;
+    padding-left: 2rem;
+    padding-right: 0rem;
+    margin-bottom: 1rem;
+  }
+}
+
 .header__icon > p {
   display: none;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
+  font-family: "Poppins", sans-serif;
   margin-left: auto;
   margin-right: auto;
   font-size: small;
@@ -41,10 +78,12 @@
 
 .header__icon--active > p {
   display: inline-flex !important;
+  color: #3dbb3d;
 }
 
 .header__icon:hover > p {
   display: inline-flex;
+  color: #3dbb3d;
 }
 
 .header__icon > .MuiSvgIcon-root {
@@ -60,5 +99,8 @@
 
 .header > h3 {
   font-size: 3rem;
+  color: #3dbb3d;
   font-weight: 700;
+  padding-right: 2rem;
+  font-family: "Poppins", sans-serif;
 }
